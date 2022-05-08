@@ -4,13 +4,14 @@ from aws_cdk import aws_lambda
 app = cdk.App()
 stack = cdk.Stack(app, "test")
 
-# 例外を出すlambda
+# タイムアウトするlambda
 fn1 = aws_lambda.Function(
     stack,
-    "ExceptionFunction",
+    "TimeoutFunction",
     code=aws_lambda.Code.from_asset("lambdas"),
     handler="fn1.handler",
     runtime=aws_lambda.Runtime.PYTHON_3_9,
+    timeout=cdk.Duration.seconds(1),
 )
 
 # fn1を同期呼び出しするlambda

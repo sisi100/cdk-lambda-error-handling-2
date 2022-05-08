@@ -1,4 +1,4 @@
-同期呼び出ししたLambdaの動作確認する
+同期呼び出ししたLambdaがTimeoutしたときのエラーレスポンスを確認する
 # 構成
 
 ![](docs/imgs/diagram.png)

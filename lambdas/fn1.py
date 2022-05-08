@@ -1,7 +1,6 @@
-class HogehogeException(Exception):
-    pass
+from time import sleep
 
 
 def handler(event, context):
-    """例外を投げるlambda"""
-    raise HogehogeException("HHHHHHHHOOOOOOOOOOGGGGGGGGEEEEEEEE")
+    """一生眠るLambda"""
+    sleep(15 * 60)
