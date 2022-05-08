@@ -1,4 +1,9 @@
-テンプレート
+同期呼び出ししたLambdaの動作確認する
+# 構成
+
+![](docs/imgs/diagram.png)
+
+構成の出力には https://github.com/pistazie/cdk-dia を使わせて頂いてます！感謝！
 
 # 準備
 
@@ -10,5 +15,5 @@ pip install -r requirements.txt
 # デプロイ
 
 ```
-npx cdk -a "python3 app.py" synth
+npx cdk -a "python3 app.py" deploy
 ```
